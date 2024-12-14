@@ -1,0 +1,183 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #1b2027;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Hilangkan scroll bar horizontal */
+  }
+  
+  #container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    max-width: 100%; /* Pastikan tidak melebihi lebar layar */
+    overflow-x: hidden; /* Tambahan untuk kontainer utama */
+  }
+  
+  * {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1a1e25;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    border-bottom: 1.5px solid #333;
+  }
+  
+  #title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+  }
+  
+  #title h1 {
+    margin-left: 20px;
+    font-size: 32.5px;
+    color: #ffd700;
+    letter-spacing: 7.5px;
+    word-spacing: 10px;
+  }
+  
+  #title img {
+    max-width: 130px;
+    height: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+  }
+  
+  nav li {
+    font-size: 18px;
+    background-color: #393E46;
+    color: #ffd700;
+    padding: 10px 15px;
+    border-radius: 30px;
+    white-space: nowrap; 
+  }
+  
+  a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  nav li:hover {
+    background-color: #ffd700;
+    color: #1b2027;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav li:hover a {
+    color: #1b2027;
+  }
+
+#resultContainer * {
+    margin: 0 ;
+    padding: 0;
+}
+
+#resultContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    gap: 15px;
+    flex-grow: 1; /* Memastikan mengambil sisa ruang */
+    margin-top: 20px;
+}
+
+#infoKarakter {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-radius: 8px;
+    gap:5px;
+}
+
+#karakter-pertama, #karakter-kedua {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+#karakter-pertama img, #karakter-kedua img {
+    width: 50%;
+    max-height:300px;
+    border-radius: 20px;
+}
+
+#hasilReaksi {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;  
+    align-items: center; 
+    font-size: 20px; 
+}
+
+#rekomendasi {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-radius: 8px;
+    gap:5px;
+}
+
+#weapon, #artifact {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+#weapon img, #artifact img {
+    width: 50%;
+    max-height:300px;
+    border-radius: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #1a1d23;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1.5px solid #333;
+    margin-top: auto;
+  }
+  
+  footer .copyright {
+    margin-top: 10px;
+    font-size: 17.5px;
+    color: #ccc;
+  }
